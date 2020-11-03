@@ -15,6 +15,7 @@ class API
         # :name, :instructions, :glass, :german_instructions
 
         array_of_drinks.each do |drink_hash|
+            
             drink = Drink.new
             drink.name = drink_hash["strDrink"]
             drink.instructions = drink_hash["strInstructions"]
